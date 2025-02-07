@@ -47,7 +47,9 @@ const FileUpload = () => {
 
     try {
       const res = await axios.post(
-        `${process.env.REACT_APP_BACKEND_URI}/api/reports/upload`,
+        // `${process.env.REACT_APP_BACKEND_URI}/api/reports/upload`,
+        `http://localhost:5000/api/reports/upload`,
+
         formData
       );
       setMessage(res.data.message);
