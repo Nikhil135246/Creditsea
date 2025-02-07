@@ -4,7 +4,7 @@ const xml2js = require('xml2js');
 const parseXML = async (filePath) => {
   try {
     const xmlData = fs.readFileSync(filePath, 'utf-8');
-    console.log('Raw XML Data:', xmlData); // Log the raw XML data
+    // console.log('Raw XML Data:', xmlData); // Log the raw XML data
 
     const parser = new xml2js.Parser({ explicitArray: false });
     const result = await parser.parseStringPromise(xmlData);
