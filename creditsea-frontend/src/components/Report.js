@@ -7,7 +7,7 @@ const Report = () => {
   useEffect(() => {
     const fetchReport = async () => {
       // const res = await axios.get(`${process.env.REACT_APP_BACKEND_URI}/api/reports/latest`);
-      const res = await axios.get(`http://localhost:5000/api/reports/upload`);
+      const res = await axios.get(`http://localhost:5000/api/reports/latest`);
       setReport(res.data);
     };
     fetchReport();
